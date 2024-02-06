@@ -1,6 +1,15 @@
-let some:unknown;
-some = 'Text';
-let str: string;
-str = some;
+// let some: unknown;
+// some = "Text";
+// let str: string;
+// str = some;
 
-export {};
+// export {};
+
+//Що потрібно виправити в цьому коді, щоб він став правильним та безпечним?
+
+let some: unknown;
+some = "Text";
+
+let str: string;
+
+str = typeof some === "string" ? some : "";
