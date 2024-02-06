@@ -4,10 +4,15 @@
 */
 
 enum Week {
-  Workday,
-  DayOff,
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
 }
 
 function isWeekend(day: Week): boolean {
-  return day === Week.DayOff;
+  return day === Week.Saturday || day === Week.Sunday;
 }
